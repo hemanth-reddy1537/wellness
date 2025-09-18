@@ -1,0 +1,73 @@
+.profile-section {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  z-index: 1000;
+  min-width: 200px;
+  text-align: left;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.profile-email {
+  font-size: 0.9rem;
+  color: var(--light-text-color);
+  margin-top: 5px;
+}
+
+.profile-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.profile-button:hover {
+  background-color: var(--link-color);
+}
+
+/* Diya icon styling */
+.diya-icon {
+  font-size: 2rem;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .diya-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+#logo{
+  color:rgb(7, 19, 98);
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top:20x;
+}

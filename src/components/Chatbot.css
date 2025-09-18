@@ -1,0 +1,119 @@
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-bubble {
+  max-width: 80%;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 1rem;
+  word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-bubble.bot {
+  background-color: #EAF7F7; /* Bot message color */
+  color: #062a43d0;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  font-weight: 550;
+}
+
+.message-bubble.user {
+  background-color: #4FB7B3; /* User message color */
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.message-bubble b {
+  font-weight: 700;
+}
+
+.option-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.option-chip {
+  background-color: #EAF7F7; 
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+  font-weight: 600;
+}
+
+.option-chip:hover {
+  background-color: #82E0D4; 
+}
+
+.input-container {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.input-box {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.send-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.send-button:hover {
+  background-color: var(--link-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.welcome-message-gemini {
+  padding: 30px 20px 10px 20px; /* Reduced top and bottom padding */
+  text-align: center;
+  flex-shrink: 0;
+}

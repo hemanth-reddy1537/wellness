@@ -1,0 +1,62 @@
+.helpline-page-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.helpline-header {
+  margin-bottom: 3rem;
+}
+
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.helpline-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.helpline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.helpline-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.helpline-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.helpline-card p {
+  color: var(--light-text-color);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.helpline-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #D32F2F;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.helpline-text b {
+  color: var(--text-color);
+}
