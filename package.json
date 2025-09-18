@@ -2,7 +2,7 @@
   "name": "wellness-hub",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hemanth-reddy1537.github.io/diya",
+  "homepage": "https://hemanth-reddy1537.github.io/wellness",
   "dependencies": {
     "lucide-react": "^0.544.0",
     "react": "^18.2.0",

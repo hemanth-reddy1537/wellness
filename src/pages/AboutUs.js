@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import { FaUser, FaChartLine, FaBook, FaCalendarCheck, FaLaptopCode, FaHeartbeat, FaUsers, FaArrowRight } from 'react-icons/fa';
+import { FaChartLine, FaBook, FaCalendarCheck, FaLaptopCode, FaHeartbeat, FaArrowRight } from 'react-icons/fa';
 
 function AboutUs() {
   return (
